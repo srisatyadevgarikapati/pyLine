@@ -1,9 +1,8 @@
 pipeline {
   
-  
-  agent any
+    agent none
   stages {
-    
+    agent { docker { image 'python:3.7.2' } }
     stage('build') {
       
       steps {
