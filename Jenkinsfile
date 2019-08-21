@@ -7,7 +7,7 @@ pipeline {
     stage('build') {
      
       steps {
-        sh 'pip install -r requirements.txt'
+        openshiftBuild(buildConfig: 'pyrohbdd' showBuildLogs: 'true')
       }
     }
     
