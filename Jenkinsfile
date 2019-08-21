@@ -6,7 +6,7 @@ pipeline {
     stage('Build') {
      
       steps{
-        openshiftBuild(buildConfig: 'pyrohbdd' showBuildLogs: 'true')
+        openshiftBuild(buildConfig: 'pyrohbdd' )
       }
       
     }
